@@ -20,10 +20,10 @@ install:
 	$(RUN) bundle install
 
 serve:
-	$(RUN) bundle exec jekyll serve --livereload --open-url
+	$(RUN) bundle exec jekyll serve --source docs --destination _site --livereload --open-url
 
 build:
-	$(RUN) bundle exec jekyll build
+	$(RUN) bundle exec jekyll build --source docs --destination _site
 
 clean:
 	rm -rf _site .jekyll-cache

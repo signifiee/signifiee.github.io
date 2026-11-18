@@ -1,12 +1,12 @@
 media:
-  input: assets/images
+  input: docs/assets/images
   output: /assets/images
 
 content:
   - name: artworks
     label: Artworks
     type: collection
-    path: _artworks
+    path: docs/_artworks
     view:
       fields: [title, date]
     fields:
@@ -19,7 +19,7 @@ content:
   - name: about
     label: About page
     type: file
-    path: about.md
+    path: docs/about.md
     fields:
       - { name: title, type: string }
       - { name: body, label: Text, type: rich-text }
