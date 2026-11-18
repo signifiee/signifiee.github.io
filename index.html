@@ -1,0 +1,13 @@
+---
+layout: default
+title: Gallery
+---
+<div class="grid">
+  {% assign works = site.artworks | sort: "date" | reverse %}
+  {% for work in works %}
+  <a class="card" href="{{ work.url | relative_url }}">
+    <img src="{{ work.image | relative_url }}" alt="{{ work.title }}" loading="lazy">
+    <span>{{ work.title }}</span>
+  </a>
+  {% endfor %}
+</div>

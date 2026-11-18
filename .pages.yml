@@ -1,0 +1,25 @@
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  - name: artworks
+    label: Artworks
+    type: collection
+    path: _artworks
+    view:
+      fields: [title, date]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: image, label: Picture, type: image }
+      - { name: description, label: Short description, type: text }
+      - { name: body, label: Longer story (optional), type: rich-text }
+
+  - name: about
+    label: About page
+    type: file
+    path: about.md
+    fields:
+      - { name: title, type: string }
+      - { name: body, label: Text, type: rich-text }

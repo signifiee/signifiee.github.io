@@ -1,0 +1,20 @@
+title: Sigi's Art Archive
+description: A collection of my artwork
+# For a project site (username.github.io/repo-name) set baseurl: "/repo-name"
+baseurl: ""
+url: ""
+
+# Instagram handle (without @). Leave empty to hide the icon.
+instagram: signifiee
+
+collections:
+  artworks:
+    output: true
+    permalink: /art/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: artworks
+    values:
+      layout: artwork
