@@ -15,6 +15,9 @@ Interested in a piece or just want to say hi? Get in touch.
 {% endif %}
 
 Email: [tsldud0302@gmail.com](mailto:tsldud0302@gmail.com)
+
+Instagram: [signifieee](https://instagram.com/signifieee)
+
 {% if site.instagram != "" %}
 
 {% endif %}
