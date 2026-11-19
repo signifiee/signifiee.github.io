@@ -1,11 +1,11 @@
-title: Sigi's Art Archive
+title: signifiee - art archive
 description: A collection of my artwork
 # For a project site (username.github.io/repo-name) set baseurl: "/repo-name"
 baseurl: ""
 url: ""
 
 # Instagram handle (without @). Leave empty to hide the icon.
-instagram: signifiee
+instagram: signifieee
 
 collections:
   artworks:
@@ -18,3 +18,7 @@ defaults:
       type: artworks
     values:
       layout: artwork
+
+# Contact form: create a free form at https://formspree.io and paste its endpoint,
+# e.g. https://formspree.io/f/abcdwxyz. Leave empty to show only the email link.
+contact_form_endpoint: ""

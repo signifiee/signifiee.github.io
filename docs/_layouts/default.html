@@ -9,10 +9,13 @@
 <body>
   <header>
     <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="nav-toggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
     <nav>
-      <a href="{{ '/' | relative_url }}">Gallery</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      {% if site.instagram != "" %}<a href="https://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a>{% endif %}
+      <a href="{{ '/' | relative_url }}">gallery</a>
+      <a href="{{ '/about/' | relative_url }}">about</a>
+      <a href="{{ '/contact/' | relative_url }}">contact</a>
+      {% if site.instagram != "" %}<a href="https://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener">instagram</a>{% endif %}
     </nav>
   </header>
   <main>{{ content }}</main>

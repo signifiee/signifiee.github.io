@@ -23,3 +23,11 @@ content:
     fields:
       - { name: title, type: string }
       - { name: body, label: Text, type: rich-text }
+
+  - name: contact
+    label: Contact page
+    type: file
+    path: docs/contact.md
+    fields:
+      - { name: title, type: string }
+      - { name: body, label: Text, type: rich-text }
